@@ -1,8 +1,16 @@
-<h1>Choose your country</h1>
-
-{% for country in shop.metafields.global.countries.value %}
-  {{ country.code | downcase | append: ".png" | prepend: "/img/flags/" | asset_img_url }}
-  <a href="/{{ country.default_language }}-{{ country.code }}" >
-    {{ country.code | downcase | append: ".png" | prepend: "/img/flags/" | asset_img_url  | img_tag}}
-  </a>
-{% endfor %}
+<div class="flex flex-col md:flex-row">
+  <div class="basis-1/2 mb-10 md:pr-10 lg:pr-20">
+    <h1 class="text-2xl font-bold mb-4 lg:text-3xl">Choose your country</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mattis consequat lacinia. Etiam fermentum quis dui non mollis. Aliquam mattis consequat lacinia. Etiam fermentum quis dui non mollis. Aliquam mattis consequat lacinia.</p>
+  </div>
+  <div class="basis-1/2">
+    <div class="grid grid-cols-2 gap-6 md:grid-cols-4">
+      {% for country in shop.metafields.global.countries.value %}
+        <a href="/{{ country.default_language }}-{{ country.code }}" class="border rounded drop-shadow-xl hover:opacity-75">
+          <img src="{{ country.code | downcase | append: ".png" | asset_img_url: "400x" }}" class="rounded" />
+          
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

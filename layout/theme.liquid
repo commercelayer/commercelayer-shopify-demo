@@ -8,8 +8,9 @@
   </head>
 
   <body>
-    <div class="container mx-auto p-4">
+    <div class="container mx-auto p-6 max-w-screen-lg md:mt-10 lg:mt-20">
       {{ content_for_layout }}
+      {% render "footer" %}
     </div>    
     {% render "commercelayer" %}
   </body>
