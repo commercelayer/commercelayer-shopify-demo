@@ -1,0 +1,8 @@
+{% assign primary_locale = request.locale.primary %}
+
+{% if primary_locale %}
+  {% render "country-selector" %}
+{% else %}
+  <div>{{ request.locale.name }}</div>
+  {% render "products" %}
+{% endif %}

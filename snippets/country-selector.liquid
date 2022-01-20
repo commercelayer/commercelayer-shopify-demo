@@ -1,0 +1,8 @@
+<h1>Choose your country</h1>
+
+{% for country in shop.metafields.global.countries.value %}
+  {{ country.code | downcase | append: ".png" | prepend: "/img/flags/" | asset_img_url }}
+  <a href="/{{ country.default_language }}-{{ country.code }}" >
+    {{ country.code | downcase | append: ".png" | prepend: "/img/flags/" | asset_img_url  | img_tag}}
+  </a>
+{% endfor %}

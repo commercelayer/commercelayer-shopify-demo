@@ -1,0 +1,5 @@
+  {% for product in collections.all.products %}
+    {{ product.title }}
+    {% assign sku = product.first_available_variant.sku %}
+    {% render "price", sku: sku %}
+  {% endfor %}

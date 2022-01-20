@@ -1,10 +1,6 @@
 {% assign language_code = request.locale.iso_code | split: '-' | first %}
 {% assign country_code = request.locale.iso_code | split: '-' | last %}
-{% assign country_key = country_code | prepend: 'COUNTRY_' %}
-{% assign market_id = shop.metafields.markets[country_key] %}
-
-<div>Language: {{ language_code }}</div>
-<div>Country: {{ country_code }}</div>
+{% assign country = shop.metafields.global.countries.value | where: "code", country_code | first %}
 
 <!-- Config -->
 <div
@@ -13,7 +9,7 @@
   data-client-id="ic8ClJsjN3DrPTlMuLjPDOEIubPeQrfOlnTsMNImKak"
   data-country-code="{{ country_code }}"
   data-language-code="{{ language_code }}"
-  data-market-id="{{ market_id }}"
+  data-market-id="{{ country.market }}"
 ></div>
 
 <!-- JS Library -->
