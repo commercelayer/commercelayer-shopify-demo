@@ -1,16 +1,23 @@
-{% unless request.locale.primary %}
-  <div class="flex items-center mb-10 pb-6 justify-start md:mb-20">
-    <span class="mr-2 font-semibold">Shipping to:</span>
-    {% assign country_code = request.locale.iso_code | split: '-' | last %}
-    <span class="w-10">
-      <a href="/" class="hover:opacity-75" >
-        {% render "country-flag", country_code: country_code %}
-      </a>
-    </span>
-    <span class="mx-2 text-gray-300">|</span>
-    <span class="">
-      <span class="font-semibold">Language:</span>
-      {{ request.locale.endonym_name }}
-    </span>
+<header class="border-b pb-6 mb-24">
+  <div class="flex flex-row items-center">
+    <div class="grow">
+      <img src="{{ 'shopify.svg' | asset_url }}" class="inline w-24 mr-2" />
+      <span class="mr-2 text-xl">+</span>
+      <img src="{{ 'commercelayer.svg' | asset_url }}" class="inline w-40" />
+    </div>
+    <div>
+    {% unless request.locale.primary %}
+        <span class="font-semibold mr-1">Language:</span>
+        {{ request.locale.endonym_name }}
+        <span class="mx-2 text-gray-300">|</span>
+        <span class="font-semibold mr-1">Shipping to:</span>
+        {% assign country_code = request.locale.iso_code | split: '-' | last %}
+        <span>
+          <a href="/" class="hover:opacity-75" >
+            {% render "country-flag", country_code: country_code %}
+          </a>
+        </span>
+    {% endunless %}
+    </div>
   </div>
-{% endunless %}
+</header>
