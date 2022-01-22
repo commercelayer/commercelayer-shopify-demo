@@ -1,0 +1,16 @@
+{% unless request.locale.primary %}
+  <div class="flex items-center mb-10 pb-6 justify-start md:mb-20">
+    <span class="mr-2 font-semibold">Shipping to:</span>
+    {% assign country_code = request.locale.iso_code | split: '-' | last %}
+    <span class="w-10">
+      <a href="/" class="hover:opacity-75" >
+        {% render "country-flag", country_code: country_code %}
+      </a>
+    </span>
+    <span class="mx-2 text-gray-300">|</span>
+    <span class="">
+      <span class="font-semibold">Language:</span>
+      {{ request.locale.endonym_name }}
+    </span>
+  </div>
+{% endunless %}
