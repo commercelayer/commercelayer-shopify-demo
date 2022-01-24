@@ -8,9 +8,17 @@
   </head>
 
   <body>
-    <div class="container mx-auto p-6 max-w-screen-lg">
+    <div class="container mx-auto p-6 max-w-screen-xl">
       {% render "header" %}
-      {{ content_for_layout }}
+      <div class="flex flex-col md:flex-row">
+        <div class="basis-1/2 mb-10 md:pr-10 lg:pr-20">
+          <h1 class="text-2xl font-bold mb-4 lg:text-3xl">{{ template.name | prepend: 'titles.' | t }}</h1>
+          <p>{{ template.name | prepend: 'hints.' | t }}</p>
+        </div>
+        <div class="basis-1/2">
+          {{ content_for_layout }}
+        </div>
+      </div>      
       {% render "footer" %}
     </div>    
     {% render "commercelayer" %}

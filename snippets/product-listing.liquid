@@ -1,7 +1,9 @@
-<div class="hover:opacity-75 text-center">
-  {% assign image = product.images | first %}
-  <img src="{{ image.src | product_img_url: 'large' }}">
-  <div class="mt-4 font-semibold">{{ product.title | upcase }}</div>
-  {% assign sku = product.first_available_variant.sku %}
-  {% render "price", sku: sku %}    
-</div>
+<a href="/{{request.locale.iso_code}}/products/{{ product.handle }}">
+  <div class="hover:opacity-75 text-center">
+    {% assign image = product.images | first %}
+    <img src="{{ image.src | product_img_url: 'large' }}">
+    <div class="mt-4 font-semibold text-sm">{{ product.title | upcase }}</div>
+    {% assign sku = product.first_available_variant.sku %}
+    {% render "price", sku: sku %}    
+  </div>
+</a>
