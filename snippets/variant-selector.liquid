@@ -1,0 +1,22 @@
+<div class="flex mt-4">
+  <!-- Variants (select, with optional quantity identifier) -->
+  <div class="w-full border border-black p-2 rounded">
+    <select
+      class="clayer-variant-select w-full"
+      name="variant"
+      data-availability-message-container-id="availability-message"
+      data-add-to-bag-id="add-to-bag"
+      data-add-to-bag-quantity-id="add-to-bag-quantity"
+      data-price-container-id="price-{{product.id}}"
+    >
+      {% for variant in product.variants %}
+        <option
+          class="clayer-variant"
+          data-sku-code="{{variant.sku}}"
+          data-sku-name="{{variant.title}}"
+          >{{variant.title}}</option
+        >
+      {% endfor %}
+    </select>      
+  </div>
+</div>

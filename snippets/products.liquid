@@ -1,5 +1,6 @@
-<div class="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-10">
-  {% assign products = collections.all.products | sort: 'title' %}
+<div class="grid grid-cols-3 gap-6 md:gap-20">
+  {% assign collection = collections | first %}
+  {% assign products = collection.products %}
   {% for product in products %}
     {% render "product-listing", product: product %}
   {% endfor %}

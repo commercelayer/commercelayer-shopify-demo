@@ -1,0 +1,14 @@
+<div class="flex">
+  <div class="w-1/2">
+    {% assign image = product.images | first %}
+    <img src="{{ image.src | product_img_url: 'large' }}">
+  </div>
+  <div class="w-1/2 pl-8">
+    <div class="font-semibold">{{ product.title | upcase }}</div>
+    {% assign sku = product.first_available_variant.sku %}
+    {% assign id = "price-" | append: product.id %}
+    {% render "price", sku: sku, id: id %}
+    {% render "variant-selector", product: product %}
+    {% render "add-to-bag" %}
+  </div>
+</div>
