@@ -11,11 +11,11 @@
     <div class="container mx-auto p-6 max-w-screen-xl">
       {% render "header" %}
       <div class="flex flex-col md:flex-row">
-        <div class="basis-1/2 mb-10 md:pr-10 lg:pr-20">
+        <div class="bg-gray-100 rounded-lg p-10 basis-1/2">
           <h1 class="text-2xl font-bold mb-4 lg:text-3xl">{{ template.name | prepend: 'titles.' | t }}</h1>
           <p>{{ template.name | prepend: 'hints.' | t }}</p>
         </div>
-        <div class="basis-1/2">
+        <div class="basis-1/2 p-10">
           {{ content_for_layout }}
         </div>
       </div>      
