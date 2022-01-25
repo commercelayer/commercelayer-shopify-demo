@@ -7,3 +7,9 @@
     >ADD TO CART</a
   >
 </div>
+
+<script>
+  document.addEventListener('clayer-line-item-created', function (e) {
+    window.location.href = "/{{request.locale.iso_code}}/cart";
+  }, false);
+</script>

@@ -9,6 +9,7 @@
     {% assign id = "price-" | append: product.id %}
     {% render "price", sku: sku, id: id %}
     {% render "variant-selector", product: product %}
+    {% render "availability-message" %}
     {% render "add-to-cart" %}
   </div>
 </div>

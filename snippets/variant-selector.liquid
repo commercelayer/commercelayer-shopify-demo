@@ -13,7 +13,9 @@
         <option
           class="clayer-variant"
           data-sku-code="{{variant.sku}}"
-          data-sku-name="{{variant.title}}"
+          data-sku-name="{{product.title}} ({{variant.title}})"
+          {% assign image = product.images | first %}
+          data-sku-image-url={{ image.src | product_img_url: 'large' }}
           >{{variant.title}}</option
         >
       {% endfor %}
