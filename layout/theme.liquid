@@ -8,19 +8,18 @@
   </head>
 
   <body>
-    <div class="container mx-auto p-6 max-w-screen-xl">
+    <div class="container mx-auto max-w-screen-xl">
       {% render "header" %}
       <div class="flex flex-col md:flex-row">
-        <div class="bg-gray-100 rounded-lg p-10 basis-1/2">
-          <h1 class="text-2xl font-bold mb-4 lg:text-3xl">{{ template.name | prepend: 'titles.' | t }}</h1>
-          <p>{{ template.name | prepend: 'hints.' | t }}</p>
-        </div>
-        <div class="basis-1/2 p-10">
+        {% render "hint" %}
+        <div class="basis-1/2 p-6 md:p-10">
           {{ content_for_layout }}
         </div>
       </div>      
       {% render "footer" %}
-    </div>    
-    {% render "commercelayer" %}
+    </div>
+    {% unless request.locale.primary %}
+      {% render "commercelayer" %}
+    {% endunless %}
   </body>
  </html>
