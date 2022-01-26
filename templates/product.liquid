@@ -7,9 +7,9 @@
     <div class="font-semibold">{{ product.title | upcase }}</div>
     {% assign sku = product.first_available_variant.sku %}
     {% assign id = "price-" | append: product.id %}
-    {% render "price", sku: sku, id: id %}
     {% render "variant-selector", product: product %}
-    {% render "availability-message" %}
+    {% render "price", id: id %}
     {% render "add-to-cart" %}
+    {% render "availability-message" %}
   </div>
 </div>

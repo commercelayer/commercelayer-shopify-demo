@@ -8,6 +8,7 @@
     data-add-to-bag-quantity-id="add-to-bag-quantity"
     data-price-container-id="price-{{product.id}}"
   >
+    <option value="" disabled selected>Select size</option>
     {% for variant in product.variants %}
       <option
         class="clayer-variant"
