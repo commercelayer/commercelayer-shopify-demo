@@ -1,79 +1,9 @@
-<div id="empty-cart">
-  You cart is empty.
-</div>
-
-<div id="cart" class="hidden">
-  <div id="clayer-shopping-bag-container">
-    <table>
-      <thead>
-        <tr>
-          <th colspan="2">SKU</th>
-          <th>Reference</th>
-          <th>Unit price</th>
-          <th>Q.ty</th>
-          <th>Total</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody id="clayer-shopping-bag-items-container">
-      </tbody>
-      <template id="clayer-shopping-bag-item-template">
-        <tr>
-          <td>
-            <img class="clayer-shopping-bag-item-image"></img>
-          </td>
-          <td class="clayer-shopping-bag-item-name"></td>
-          <td class="clayer-shopping-bag-item-reference"></td>
-          <td class="clayer-shopping-bag-item-unit-amount"></td>
-          <td class="clayer-shopping-bag-item-qty-container">
-            <!-- The unavailable message template is appended to the element
-                  below if customer selects a quantity that is not available  -->
-            <span class="clayer-shopping-bag-item-availability-message-container"></span>
-          </td>
-          <td class="clayer-shopping-bag-item-total-amount"></td>
-          <td>
-            <a href="#" class="clayer-shopping-bag-item-remove">remove</a>
-          </td>
-        </tr>
-      </template>
-    </table>
-
-    <table>
-      <tr>
-        <td>Subtotal</td>
-        <td class="clayer-shopping-bag-subtotal"></td>
-      </tr>
-      <tr>
-        <td>Shipping</td>
-        <td class="clayer-shopping-bag-shipping"></td>
-      </tr>
-      <tr>
-        <td>Payment</td>
-        <td class="clayer-shopping-bag-payment"></td>
-      </tr>
-      <tr>
-        <td>Discount</td>
-        <td class="clayer-shopping-bag-discount"></td>
-      </tr>
-      <tr>
-        <td>Taxes</td>
-        <td class="clayer-shopping-bag-taxes"></td>
-      </tr>
-      <tr>
-        <td>Total</td>
-        <td class="clayer-shopping-bag-total"></td>
-      </tr>
-    </table>
-  </div>
-
-  <a href="#" class="clayer-shopping-bag-checkout text-center text-sm bg-red-600 text-white px-4 py-3 rounded hover:opacity-75">
-    Proceed to checkout
-  </a>
-</div>
+{% render "cart-empty" %}
+{% render "cart-summary" %}
 
 <script>
   document.addEventListener('clayer-order-ready', function (e) {
-    document.getElementById('empty-cart').classList.add("hidden");
-    document.getElementById('cart').classList.remove("hidden");
+    document.getElementById('cart-empty').classList.add("hidden");
+    document.getElementById('cart-summary').classList.remove("hidden");
   }, false);
 </script>
