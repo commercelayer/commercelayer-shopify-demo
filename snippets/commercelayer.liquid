@@ -2,6 +2,10 @@
 {% assign country_code = request.locale.iso_code | split: '-' | last %}
 {% assign country = shop.metafields.global.countries.value | where: "code", country_code | first %}
 
+<div class="text-xs text-gray-400">
+  MARKET # {{ country.market }}
+</div>
+
 <!-- Config -->
 <div
   id="clayer-config"

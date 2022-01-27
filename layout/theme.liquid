@@ -9,6 +9,7 @@
 
   <body>
     <div class="container mx-auto max-w-screen-xl">
+      {% render "announcement" %}
       {% render "header" %}
       <div class="flex flex-col md:flex-row">
         {% render "hint" %}
@@ -18,8 +19,5 @@
       </div>      
       {% render "footer" %}
     </div>
-    {% unless request.locale.primary %}
-      {% render "commercelayer" %}
-    {% endunless %}
   </body>
  </html>
