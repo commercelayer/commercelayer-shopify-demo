@@ -1,10 +1,7 @@
-<a href="/{{request.locale.iso_code}}/products/{{ product.handle }}">
-  <div class="hover:opacity-75 text-center">
-    {% assign image = product.images | first %}
-    <img src="{{ image.src | product_img_url: 'large' }}">
-    <div class="mt-4 font-semibold text-sm">{{ product.title | upcase }}</div>
-    {% assign variant = product.first_available_variant %}
-    {% assign sku = variant.sku %}
-    {% render "price-range", sku: sku, id: "price-{{variant.id}}" %}
-  </div>
-</a>
+<div class="grid grid-cols-2 gap-8 lg:grid-cols-3">
+  {% assign collection = collections | first %}
+  {% assign products = collection.products %}
+  {% for product in products %}
+    {% render "product", product: product %}
+  {% endfor %}
+</div>

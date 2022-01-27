@@ -5,8 +5,8 @@
     "cart": "Shopping cart"
   },
   "hints": {
-    "index": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum libero eget ligula commodo, non posuere leo fringilla. Nulla bibendum massa luctus auctor rutrum. Quisque at turpis ipsum. Quisque commodo posuere nibh, ut placerat velit pretium quis. Vivamus eu elementum risus. Ut vel lectus ultrices tortor mollis ornare. Maecenas vestibulum ullamcorper ultricies. Mauris mattis ultrices ante ac ornare. Nullam quis feugiat dolor, ut laoreet mauris.",
-    "product": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum libero eget ligula commodo, non posuere leo fringilla. Nulla bibendum massa luctus auctor rutrum. Quisque at turpis ipsum. Quisque commodo posuere nibh, ut placerat velit pretium quis. Vivamus eu elementum risus. Ut vel lectus ultrices tortor mollis ornare. Maecenas vestibulum ullamcorper ultricies. Mauris mattis ultrices ante ac ornare. Nullam quis feugiat dolor, ut laoreet mauris.",
+    "index": "This is a country-specific homepage, which contains a selection of products managed on Shopify. Each product has more variants (sizes) that are connected to different SKUs on Commerce Layer. Prices for the first available variants are fetched from Commerce Layer. The selected country (market) determines the current price list and currency. Select a product to view all the available variants and their availability details.",
+    "product": "This is a product page. All content is managed on Shopify.",
     "cart": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum libero eget ligula commodo, non posuere leo fringilla. Nulla bibendum massa luctus auctor rutrum. Quisque at turpis ipsum. Quisque commodo posuere nibh, ut placerat velit pretium quis. Vivamus eu elementum risus. Ut vel lectus ultrices tortor mollis ornare. Maecenas vestibulum ullamcorper ultricies. Mauris mattis ultrices ante ac ornare. Nullam quis feugiat dolor, ut laoreet mauris."
   }
 }

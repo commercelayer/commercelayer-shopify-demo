@@ -3,6 +3,6 @@
     "index": "Choose your country"
   },
   "hints": {
-    "index": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis condimentum libero eget ligula commodo, non posuere leo fringilla. Nulla bibendum massa luctus auctor rutrum. Quisque at turpis ipsum. Quisque commodo posuere nibh, ut placerat velit pretium quis. Vivamus eu elementum risus. Ut vel lectus ultrices tortor mollis ornare. Maecenas vestibulum ullamcorper ultricies. Mauris mattis ultrices ante ac ornare. Nullam quis feugiat dolor, ut laoreet mauris."
+    "index": "Select a shipping country and access a country-specific homepage. The list of available countries is stored in a Shopify metafield. The metafield object contains a reference to a Commerce Layer market for each country. More countries can be connected to the same market."
   }
 }
