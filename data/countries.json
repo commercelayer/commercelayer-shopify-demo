@@ -2,7 +2,7 @@
   {
     "name": "Austria",
     "code": "AT",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
@@ -14,7 +14,7 @@
   {
     "name": "Belgium",
     "code": "BE",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
@@ -50,25 +50,25 @@
   {
     "name": "Denmark",
     "code": "DK",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Finland",
     "code": "FI",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "France",
     "code": "FR",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Germany",
     "code": "DE",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
@@ -92,19 +92,19 @@
   {
     "name": "Ireland",
     "code": "IE",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Iceland",
     "code": "IS",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Italy",
     "code": "IT",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
@@ -128,7 +128,7 @@
   {
     "name": "Netherlands",
     "code": "NL",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
@@ -140,19 +140,19 @@
   {
     "name": "Norway",
     "code": "NO",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Poland",
     "code": "PL",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Portugal",
     "code": "PT",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
@@ -182,25 +182,25 @@
   {
     "name": "Spain",
     "code": "ES",
-    "market": 1234,
+    "market": 9060,
     "default_language": "it"
   },
   {
     "name": "Sweden",
     "code": "SE",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Switzerland",
     "code": "CH",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
     "name": "Turkey",
     "code": "TR",
-    "market": 8999,
+    "market": 9060,
     "default_language": "en"
   },
   {
