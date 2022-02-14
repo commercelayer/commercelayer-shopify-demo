@@ -2,7 +2,8 @@
   <div class="text-gray-500 mb-6">
     You cart is empty
     &mdash;
-    <a href="/{{request.locale.iso_code}}" class="underline hover:opacity-75">
+    {% assign locale = request.path | slice: 1, 5 %}
+    <a href="/{{locale}}" class="underline hover:opacity-75">
       Continue&nbsp;shopping
     </a>  
   </div>
