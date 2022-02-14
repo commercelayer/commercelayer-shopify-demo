@@ -1,4 +1,5 @@
-<a href="/{{request.locale.iso_code}}/products/{{ product.handle }}">
+
+<a href="{{request.path}}/products/{{ product.handle }}">
   <div class="hover:opacity-75 text-center">
     {% assign image = product.images | first %}
     <img src="{{ image.src | product_img_url: 'large' }}">

@@ -53,7 +53,8 @@
   </a>
   <div class="mt-4">
     or
-    <a href="/{{request.locale.iso_code}}" class="underline hover:opacity-75">
+    {% assign locale = request.path | slice: 1, 5 %}
+    <a href="/{{locale}}" class="underline hover:opacity-75">
       continue shopping
     </a>  
   </div>

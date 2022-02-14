@@ -1,5 +1,7 @@
-{% assign language_code = request.locale.iso_code | split: '-' | first %}
-{% assign country_code = request.locale.iso_code | split: '-' | last %}
+{% assign locale = request.path | slice: 1, 5 %}
+
+{% assign language_code = locale | split: '-' | first %}
+{% assign country_code = locale | split: '-' | last %}
 {% assign country = shop.metafields.global.countries.value | where: "code", country_code | first %}
 
 <div class="text-xs text-gray-400">
