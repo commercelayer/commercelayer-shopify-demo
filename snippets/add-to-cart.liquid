@@ -1,3 +1,5 @@
+{% assign locale = request.path | slice: 1, 5 %}
+
 <div class="mt-4">
   <a
     href="#"
@@ -10,7 +12,7 @@
 
 <script>
   document.addEventListener('clayer-line-item-created', function (e) {
-    window.location.href = "/{{request.locale.iso_code}}/cart";
+    window.location.href = "/{{locale}}/cart";
   }, false);
 </script>
 
