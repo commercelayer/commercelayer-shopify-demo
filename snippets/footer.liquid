@@ -4,7 +4,7 @@
     <img src="{{ 'shopify-commercelayer.svg' | asset_url }}" class="w-64 hidden md:inline">
     <img src="{{ 'shopify-commercelayer-glyphs.svg' | asset_url }}" class="w-16 md:hidden">
   </div>
-  {% unless request.locale.primary %}
+  {% unless request.path == "/" %}
     {% render "commercelayer" %}
   {% endunless %}
 </footer>
