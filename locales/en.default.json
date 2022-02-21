@@ -10,5 +10,10 @@
     "product": "This is a product page. All content is managed on Shopify. When you select a size, the price and availability information are fetched from Commerce Layer. If the selected variant is available, you can add it to the shopping cart.",
     "cart": "This is the cart page. All data is provided by Commerce Layer. When you proceed to checkout, you are redirected to the Commerce Layer checkout application, which is fully customizable. Each country has a persistent cart. When you change country, the current cart changes accordingly.",
     "countries": "Select a shipping country and access a country-specific homepage. The list of available countries is stored in a Shopify metafield. The metafield object contains a reference to a Commerce Layer market for each country. More countries can be connected to the same market."
+  },
+  "announcement": {
+    "demo_website": "This is a multi-market demo website built with Shopify and Commerce Layer",
+    "read_article": "Read full article",
+    "learn_more": "to learn more about the details"
   }
 }

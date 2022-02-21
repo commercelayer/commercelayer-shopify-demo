@@ -105,7 +105,7 @@
     "name": "Italy",
     "code": "IT",
     "market": 9060,
-    "default_language": "en"
+    "default_language": "it"
   },
   {
     "name": "Japan",
@@ -183,7 +183,7 @@
     "name": "Spain",
     "code": "ES",
     "market": 9060,
-    "default_language": "it"
+    "default_language": "en"
   },
   {
     "name": "Sweden",
